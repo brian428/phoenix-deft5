@@ -19,8 +19,9 @@ Ext.define("Phoenix.view.scenario.form.ScenarioForm", {
     boxready: "onBoxReady",
     scope: "controller"
   },
-  layout: "anchor",
-  anchor: "100% 100%",
+  layout: {
+    type: "vbox"
+  },
   initComponent: function() {
     Ext.apply(this, {
       fieldDefaults: {
@@ -36,6 +37,7 @@ Ext.define("Phoenix.view.scenario.form.ScenarioForm", {
           collapsible: false,
           layout: "anchor",
           margin: 20,
+          width: 800,
           items: [
             {
               xtype: "textfield",
@@ -66,12 +68,23 @@ Ext.define("Phoenix.view.scenario.form.ScenarioForm", {
             }
           ]
         }, {
-          xtype: "phoenix-view-scenarioItemGrid",
-          itemId: "scenarioItemGrid",
-          reference: "scenarioItemGrid",
-          store: this.getScenario().scenarioItems(),
+          xtype: "fieldset",
+          title: "Scenario Items",
+          collapsible: false,
+          margin: 20,
+          width: 1050,
           height: 250,
-          padding: "5 5 12 5"
+          layout: "fit",
+          padding: 10,
+          items: [
+            {
+              xtype: "phoenix-view-scenarioItemGrid",
+              itemId: "scenarioItemGrid",
+              reference: "scenarioItemGrid",
+              store: this.getScenario().scenarioItems(),
+              margin: 0
+            }
+          ]
         }
       ],
       tbar: [

@@ -730,17 +730,45 @@ $include-extthemeneptune-resizer-splitter: true;
 $include-extthemeneptune-toolbar-paging: true;
 $include-extthemeneptune-toolbar-toolbar: true;
 $include-phoenix-application: true;
+$include-phoenix-config-appconfig: true;
+$include-phoenix-context-abstractcontext: true;
+$include-phoenix-context-scenariocontext: true;
 $include-phoenix-controller-main: true;
 $include-phoenix-controller-root: true;
+$include-phoenix-model-abstractscenariomodel: true;
+$include-phoenix-model-affecteditem: true;
+$include-phoenix-model-probability: true;
+$include-phoenix-model-revenueimpact: true;
+$include-phoenix-model-scenario: true;
+$include-phoenix-model-scenarioitem: true;
+$include-phoenix-service-notificationservice: true;
+$include-phoenix-service-scenarioservice: true;
+$include-phoenix-store-affecteditemstore: true;
+$include-phoenix-store-probabilitystore: true;
+$include-phoenix-store-revenueimpactstore: true;
+$include-phoenix-store-scenarioitemstore: true;
+$include-phoenix-store-scenariostore: true;
+$include-phoenix-view-abstractphoenixcontroller: true;
+$include-phoenix-view-notification: true;
+$include-phoenix-view-viewport: true;
 $include-phoenix-view-main-main: true;
 $include-phoenix-view-main-maincontroller: true;
 $include-phoenix-view-main-mainmodel: true;
+$include-phoenix-view-mainpanel-mainpanel: true;
+$include-phoenix-view-mainpanel-mainpanelcontroller: true;
+$include-phoenix-view-scenario-form-scenarioform: true;
+$include-phoenix-view-scenario-form-scenarioformcontroller: true;
+$include-phoenix-view-scenario-form-scenarioitemgrid: true;
+$include-phoenix-view-scenario-grid-scenariogrid: true;
+$include-phoenix-view-scenario-grid-scenariogridcontroller: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
 @import '../../../../../ext/packages/ext-theme-neutral/sass/etc/all';
 /* including package ext-theme-neptune */
 @import '../../../../../ext/packages/ext-theme-neptune/sass/etc/all';
+/* including package Phoenix */
+@import '../../../../../sass/etc/all';
 /* including package ext-theme-neptune */
 @import '../../../../../ext/packages/ext-theme-neptune/sass/var/Component';
 @import '../../../../../ext/packages/ext-theme-neptune/sass/var/LoadMask';

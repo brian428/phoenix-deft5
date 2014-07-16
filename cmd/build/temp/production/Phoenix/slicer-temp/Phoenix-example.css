@@ -81,6 +81,209 @@
  */
 /* including package ext-theme-neutral */
 /* including package ext-theme-neptune */
+/* including package Phoenix */
+/* Add your own styles here. */
+/* line 3, ../../../../../sass/etc/all.scss */
+.mousepointer {
+  cursor: pointer;
+}
+
+/* line 5, ../../../../../sass/etc/all.scss */
+.add-icon {
+  background: url("icons/add.png");
+}
+
+/* line 9, ../../../../../sass/etc/all.scss */
+.delete-icon {
+  background: url("icons/delete.png");
+  width: 16px;
+  height: 16px;
+}
+
+/* line 15, ../../../../../sass/etc/all.scss */
+.save-icon {
+  background: url("icons/disk.png");
+}
+
+/* line 19, ../../../../../sass/etc/all.scss */
+.cancel-icon {
+  background: url("icons/control_stop.png");
+}
+
+/* line 23, ../../../../../sass/etc/all.scss */
+.copy-icon {
+  background: url("icons/copy.png");
+}
+
+/* line 27, ../../../../../sass/etc/all.scss */
+.editorWithMargin {
+  margin-top: 4px;
+}
+
+/* line 31, ../../../../../sass/etc/all.scss */
+.phoenix-logo {
+  margin: 2px 16px 4px 8px !important;
+  display: block !important;
+  background-image: url(icons/phoenix_logo.png);
+  background-repeat: no-repeat;
+  width: auto;
+  /*or your image's width*/
+  height: auto;
+  /*or your image's height*/
+  padding: 0;
+}
+
+/* line 41, ../../../../../sass/etc/all.scss */
+.phoenix-header {
+  font-size: 25px !important;
+  padding: 20px 0px 0px 0px !important;
+}
+
+/* line 46, ../../../../../sass/etc/all.scss */
+.phoenix-header-small {
+  font-size: 16px !important;
+  font-family: Helvetica;
+  padding: 20px 0px 0px 18px !important;
+}
+
+/* line 52, ../../../../../sass/etc/all.scss */
+.Terrible {
+  background-color: #FF6666 !important;
+  color: black !important;
+}
+
+/* line 57, ../../../../../sass/etc/all.scss */
+.Poor {
+  background-color: #FF9966 !important;
+}
+
+/* line 61, ../../../../../sass/etc/all.scss */
+.Marginal {
+  background-color: #FFFF99 !important;
+  color: black !important;
+}
+
+/* line 66, ../../../../../sass/etc/all.scss */
+.Good {
+  background-color: #CCFF99 !important;
+}
+
+/* line 70, ../../../../../sass/etc/all.scss */
+.Great {
+  background-color: #99FF66 !important;
+}
+
+/* line 74, ../../../../../sass/etc/all.scss */
+.Excellent {
+  background-color: #00CC00 !important;
+}
+
+/* line 78, ../../../../../sass/etc/all.scss */
+.ux-required-field {
+  color: red;
+  font-weight: bold;
+}
+
+/* line 83, ../../../../../sass/etc/all.scss */
+.ux-notification-window .x-window-body {
+  text-align: center;
+  padding: 15px 5px 15px 5px;
+  width: 200px;
+}
+
+/* line 89, ../../../../../sass/etc/all.scss */
+.ux-notification-icon-success {
+  background-image: url("icons/accept.png");
+}
+
+/* line 93, ../../../../../sass/etc/all.scss */
+.ux-notification-icon-info {
+  background-image: url("icons/info.png");
+}
+
+/* line 97, ../../../../../sass/etc/all.scss */
+.ux-notification-icon-error {
+  background-image: url("icons/error.png");
+}
+
+/* line 101, ../../../../../sass/etc/all.scss */
+.ux-notification-success .x-window-header {
+  background-color: transparent;
+}
+
+/* line 105, ../../../../../sass/etc/all.scss */
+body .ux-notification-success {
+  background-color: #A8EDA8;
+}
+
+/* line 109, ../../../../../sass/etc/all.scss */
+.ux-notification-success .x-window-body {
+  text-align: center;
+  padding: 15px 5px 18px 5px;
+  width: 200px;
+  background-color: #E8FFE8;
+  border: 0px solid white;
+}
+
+/* line 117, ../../../../../sass/etc/all.scss */
+.ux-notification-info .x-window-header {
+  background-color: transparent;
+}
+
+/* line 121, ../../../../../sass/etc/all.scss */
+.ux-notification-info .x-window-body {
+  text-align: center;
+  padding: 15px 5px 18px 5px;
+  width: 200px;
+}
+
+/* line 127, ../../../../../sass/etc/all.scss */
+.ux-notification-error .x-window-header {
+  background-color: transparent;
+}
+
+/* line 131, ../../../../../sass/etc/all.scss */
+body .ux-notification-error {
+  background-color: #FFA3A3;
+}
+
+/* line 135, ../../../../../sass/etc/all.scss */
+.ux-notification-error .x-window-body {
+  text-align: center;
+  padding: 15px 5px 18px 5px;
+  width: 200px;
+  background-color: #FFE0E0;
+  border: 0px solid white;
+}
+
+/* line 143, ../../../../../sass/etc/all.scss */
+.x-grid-empty-custom {
+  width: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+
+/* line 151, ../../../../../sass/etc/all.scss */
+.x-grid-center-icon {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 157, ../../../../../sass/etc/all.scss */
+.x-action-col-cell {
+  padding-top: 2px;
+}
+
+/* line 161, ../../../../../sass/etc/all.scss */
+.x-grid-with-row-lines .x-grid-cell-inner {
+  overflow: hidden;
+  padding: 6px 4px;
+  white-space: nowrap;
+}
+
 /* including package ext-theme-neptune */
 /** @class Global_CSS */
 /** @class Ext.LoadMask */

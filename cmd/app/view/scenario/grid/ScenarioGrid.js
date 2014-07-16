@@ -17,7 +17,7 @@ Ext.define("Phoenix.view.scenario.grid.ScenarioGrid", {
     itemdblclick: "onEditScenario",
     scope: "controller"
   },
-  title: "Scenarios",
+  title: "Scenarios &nbsp;",
   initComponent: function() {
     Ext.apply(this, {
       store: this.getScenarioStore(),
@@ -25,8 +25,7 @@ Ext.define("Phoenix.view.scenario.grid.ScenarioGrid", {
         {
           header: "Scenario Name",
           dataIndex: "name",
-          flex: 1,
-          minWidth: 140
+          width: 180
         }, {
           header: "Description",
           dataIndex: "description",
@@ -49,27 +48,27 @@ Ext.define("Phoenix.view.scenario.grid.ScenarioGrid", {
           xtype: "numbercolumn",
           header: "Plan Cost / Day",
           dataIndex: "planCost",
-          width: 85,
+          width: 130,
           formatter: "usMoney"
         }, {
           xtype: "numbercolumn",
           header: "Impact Cost / Day",
           dataIndex: "impactCost",
-          width: 100,
+          width: 140,
           formatter: "usMoney"
         }, {
           xtype: "numbercolumn",
           header: "Length (Days)",
           dataIndex: "impactLength",
-          width: 80
+          width: 120
         }, {
           xtype: "numbercolumn",
           header: "Total Impact Cost",
           dataIndex: "totalImpact",
-          width: 105,
+          width: 135,
           formatter: "usMoney"
         }, {
-          header: "Plan Effectiveness",
+          header: "Effectiveness",
           dataIndex: "planEffectiveness",
           width: 105,
           renderer: function(value, metaData, record) {
@@ -81,12 +80,12 @@ Ext.define("Phoenix.view.scenario.grid.ScenarioGrid", {
           text: "Updated",
           dataIndex: "dateUpdated",
           format: "m-d-Y g:i A",
-          width: 110
+          width: 100
         }, {
           xtype: "actioncolumn",
           itemId: "scenarioActionColumn",
           text: "Delete",
-          width: 50,
+          width: 70,
           align: "center",
           sortable: false,
           reference: "scenarioActionColumn",

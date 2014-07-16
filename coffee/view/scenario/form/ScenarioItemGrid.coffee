@@ -56,7 +56,7 @@ Ext.define( "Phoenix.view.scenario.form.ScenarioItemGrid",
 			,
 				header: "Recovery Plan"
 				dataIndex: "itemDescription"
-				flex: 1
+				width: 280
 				editor:
 					emptyText: "Enter Recovery Plan"
 					cls: "editorWithMargin"
@@ -76,7 +76,7 @@ Ext.define( "Phoenix.view.scenario.form.ScenarioItemGrid",
 				xtype: "numbercolumn"
 				header: "Plan Cost / Day"
 				dataIndex: "cost"
-				width: 150
+				width: 135
 				formatter: "usMoney"
 				editor:
 					allowBlank: false
@@ -104,7 +104,7 @@ Ext.define( "Phoenix.view.scenario.form.ScenarioItemGrid",
 				xtype: "actioncolumn"
 				itemId: "scenarioItemActionColumn"
 				text: "Delete"
-				width: 100
+				width: 73
 				align: "center"
 				sortable: false
 				reference: "scenarioItemActionColumn"

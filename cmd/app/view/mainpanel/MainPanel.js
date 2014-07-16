@@ -9,7 +9,6 @@ Ext.define("Phoenix.view.mainpanel.MainPanel", {
   requires: ["Phoenix.view.mainpanel.MainPanelController", "Phoenix.view.scenario.grid.ScenarioGrid"],
   header: false,
   plain: true,
-  title: "PHOENIX Disaster Recovery Scenario Planner (DeftJS Example Application)",
   listeners: {
     boxready: "loadInitialData",
     scope: "controller"

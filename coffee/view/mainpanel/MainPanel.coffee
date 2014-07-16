@@ -10,7 +10,6 @@ Ext.define( "Phoenix.view.mainpanel.MainPanel",
 
 	header: false
 	plain: true
-	title: "PHOENIX Disaster Recovery Scenario Planner (DeftJS Example Application)"
 
 
 	listeners:

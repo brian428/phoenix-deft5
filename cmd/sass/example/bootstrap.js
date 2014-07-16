@@ -2380,11 +2380,37 @@ Ext.ClassManager.addNameAlternateMappings({
   "ExtThemeNeptune.toolbar.Paging": [],
   "ExtThemeNeptune.toolbar.Toolbar": [],
   "Phoenix.Application": [],
+  "Phoenix.config.AppConfig": [],
+  "Phoenix.context.AbstractContext": [],
+  "Phoenix.context.ScenarioContext": [],
   "Phoenix.controller.Main": [],
   "Phoenix.controller.Root": [],
+  "Phoenix.model.AbstractScenarioModel": [],
+  "Phoenix.model.AffectedItem": [],
+  "Phoenix.model.Probability": [],
+  "Phoenix.model.RevenueImpact": [],
+  "Phoenix.model.Scenario": [],
+  "Phoenix.model.ScenarioItem": [],
+  "Phoenix.service.NotificationService": [],
+  "Phoenix.service.ScenarioService": [],
+  "Phoenix.store.AffectedItemStore": [],
+  "Phoenix.store.ProbabilityStore": [],
+  "Phoenix.store.RevenueImpactStore": [],
+  "Phoenix.store.ScenarioItemStore": [],
+  "Phoenix.store.ScenarioStore": [],
+  "Phoenix.view.AbstractPhoenixController": [],
+  "Phoenix.view.Notification": [],
+  "Phoenix.view.Viewport": [],
   "Phoenix.view.main.Main": [],
   "Phoenix.view.main.MainController": [],
-  "Phoenix.view.main.MainModel": []
+  "Phoenix.view.main.MainModel": [],
+  "Phoenix.view.mainpanel.MainPanel": [],
+  "Phoenix.view.mainpanel.MainPanelController": [],
+  "Phoenix.view.scenario.form.ScenarioForm": [],
+  "Phoenix.view.scenario.form.ScenarioFormController": [],
+  "Phoenix.view.scenario.form.ScenarioItemGrid": [],
+  "Phoenix.view.scenario.grid.ScenarioGrid": [],
+  "Phoenix.view.scenario.grid.ScenarioGridController": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Deft.InjectableComponent": [],
@@ -3734,8 +3760,31 @@ Ext.ClassManager.addNameAliasMappings({
   "ExtThemeNeptune.toolbar.Paging": [],
   "ExtThemeNeptune.toolbar.Toolbar": [],
   "Phoenix.Application": [],
+  "Phoenix.config.AppConfig": [],
+  "Phoenix.context.AbstractContext": [],
+  "Phoenix.context.ScenarioContext": [],
   "Phoenix.controller.Main": [],
   "Phoenix.controller.Root": [],
+  "Phoenix.model.AbstractScenarioModel": [],
+  "Phoenix.model.AffectedItem": [],
+  "Phoenix.model.Probability": [],
+  "Phoenix.model.RevenueImpact": [],
+  "Phoenix.model.Scenario": [],
+  "Phoenix.model.ScenarioItem": [],
+  "Phoenix.service.NotificationService": [],
+  "Phoenix.service.ScenarioService": [],
+  "Phoenix.store.AffectedItemStore": [],
+  "Phoenix.store.ProbabilityStore": [],
+  "Phoenix.store.RevenueImpactStore": [],
+  "Phoenix.store.ScenarioItemStore": [
+    "store.scenarioItemStore"
+  ],
+  "Phoenix.store.ScenarioStore": [],
+  "Phoenix.view.AbstractPhoenixController": [],
+  "Phoenix.view.Notification": [
+    "widget.uxNotification"
+  ],
+  "Phoenix.view.Viewport": [],
   "Phoenix.view.main.Main": [
     "widget.app-main"
   ],
@@ -3744,6 +3793,27 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Phoenix.view.main.MainModel": [
     "viewmodel.main"
+  ],
+  "Phoenix.view.mainpanel.MainPanel": [
+    "widget.phoenix-view-mainPanel"
+  ],
+  "Phoenix.view.mainpanel.MainPanelController": [
+    "controller.MainPanelController"
+  ],
+  "Phoenix.view.scenario.form.ScenarioForm": [
+    "widget.phoenix-view-scenarioForm"
+  ],
+  "Phoenix.view.scenario.form.ScenarioFormController": [
+    "controller.ScenarioFormController"
+  ],
+  "Phoenix.view.scenario.form.ScenarioItemGrid": [
+    "widget.phoenix-view-scenarioItemGrid"
+  ],
+  "Phoenix.view.scenario.grid.ScenarioGrid": [
+    "widget.phoenix-view-scenarioGrid"
+  ],
+  "Phoenix.view.scenario.grid.ScenarioGridController": [
+    "controller.ScenarioGridController"
   ]
 });
 Ext.setVersion("ext", "5.0.0.970");

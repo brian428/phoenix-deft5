@@ -23,18 +23,17 @@ Ext.define( "Phoenix.view.Viewport",
 
 				items: [
 					xtype: "image"
-					src: "resources/icons/phoenix_logo.png"
 					cls: "phoenix-logo"
 					width: 120
 				,
 					xtype: "component"
-					html: "<strong>Phoenix</strong>: Disaster Recovery Scenario Tool"
+					html: "<strong>Phoenix 5</strong>: Disaster Recovery Scenario Tool"
 					border: false
 					cls: "phoenix-header"
 					height: 50
 				,
 					xtype: "component"
-					html: "(A <strong><a href='http://deftjs.org' target='_blank' muse_scanned='true'>DeftJS</a></strong> Example Application)"
+					html: "(A <strong><a href='http://deftjs.org' target='_blank' muse_scanned='true'>Deft JS 5</a></strong> Example)"
 					border: false
 					cls: "phoenix-header-small"
 					height: 50

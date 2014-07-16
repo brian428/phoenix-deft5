@@ -30,8 +30,9 @@ Ext.define( "Phoenix.view.scenario.form.ScenarioForm",
 		scope: "controller"
 
 
-	layout: "anchor"
-	anchor: "100% 100%"
+	layout:
+		type: "vbox"
+		#align: "stretch"
 
 
 	initComponent: ->
@@ -50,6 +51,7 @@ Ext.define( "Phoenix.view.scenario.form.ScenarioForm",
 				collapsible: false
 				layout: "anchor"
 				margin: 20
+				width: 800
 
 				items: [
 					xtype: "textfield"
@@ -78,33 +80,36 @@ Ext.define( "Phoenix.view.scenario.form.ScenarioForm",
 					afterLabelTextTpl: @getRequiredStyle()
 					margin: "0 0 12 0"
 				]
-			,
-				xtype: "phoenix-view-scenarioItemGrid"
-				itemId: "scenarioItemGrid"
-				reference: "scenarioItemGrid"
-				store: @getScenario().scenarioItems()
-				height: 250
-				#maxHeight: 500
-				#anchor: "100% 100%"
-				padding: "5 5 12 5"
 #			,
-#				xtype:"fieldset"
-#				title: "Scenario Items"
-#				collapsible: false
-#				margin: 20
-#				minHeight: 250
-#				layout: "fit"
-#				padding: 0
-#
-#				items: [
-#					xtype: "phoenix-view-scenarioItemGrid"
-#					itemId: "scenarioItemGrid"
-#					reference: "scenarioItemGrid"
-#					store: @getScenario().scenarioItems()
-#					margin: 0
-#					#anchor: "100% 100%"
-#					#margin: "5 5 12 5"
-#				]
+#				xtype: "phoenix-view-scenarioItemGrid"
+#				itemId: "scenarioItemGrid"
+#				reference: "scenarioItemGrid"
+#				store: @getScenario().scenarioItems()
+#				#flex: 1
+#				height: 250
+#				#maxHeight: 500
+#				#anchor: "100% 100%"
+#				width: 1060
+#				padding: "5 5 12 5"
+			,
+				xtype:"fieldset"
+				title: "Scenario Items"
+				collapsible: false
+				margin: 20
+				width: 1050
+				height: 250
+				layout: "fit"
+				padding: 10
+
+				items: [
+					xtype: "phoenix-view-scenarioItemGrid"
+					itemId: "scenarioItemGrid"
+					reference: "scenarioItemGrid"
+					store: @getScenario().scenarioItems()
+					margin: 0
+					#anchor: "100% 100%"
+					#margin: "5 5 12 5"
+				]
 			]
 
 			tbar: [
