@@ -1,26 +1,31 @@
-var gulp = require( 'gulp' ),
-    coffee = require( 'gulp-coffee' ),
-    coffeelint = require( 'gulp-coffeelint' ),
-    js2coffee = require( 'gulp-js2coffee' );
-    gutil = require( 'gulp-util' );
+// Required Libraries
+var gulp = require( "gulp" ),
+    coffee = require( "gulp-coffee" ),
+    coffeelint = require( "gulp-coffeelint" ),
+    js2coffee = require( "gulp-js2coffee" );
+    gutil = require( "gulp-util" );
     
-var jsAppRoot = './cmd/app';
-var coffeeAppRoot = './coffee';    
-
+// Config variables
+var coffeeAppRoot = "./coffee",    
+    jsAppRoot = "./cmd/app";
+    
+// Error logging    
 var errorHandler = function( text ) {
     gutil.log( gutil.colors.cyan( text ) );
 };    
-    
-gulp.task( 'coffee', function() {
-  gulp.src( coffeeAppRoot + '/**/*.coffee' )
+
+// CoffeeScript compile task
+gulp.task( "coffee", function() {
+  gulp.src( coffeeAppRoot + "/**/*.coffee" )
       .pipe( coffee( { bare: true, sourceMap: false } )
-      .on( 'error', errorHandler )
-      .on( 'error', gutil.beep ) )
+      .on( "error", errorHandler )
+      .on( "error", gutil.beep ) )
       .pipe( gulp.dest( jsAppRoot ) );
 } );
 
-gulp.task( 'lint', function() {
-  gulp.src( coffeeAppRoot + '/**/*.coffee' )
+// CoffeeScript linter task
+gulp.task( "lint", function() {
+  gulp.src( coffeeAppRoot + "/**/*.coffee" )
     .pipe( coffeelint( { opt: { 
         indentation: { value: 1 },
         no_tabs: { level: "ignore" }, 
@@ -30,19 +35,22 @@ gulp.task( 'lint', function() {
     .pipe( coffeelint.reporter() );
 } );
 
-gulp.task( 'scripts', [ 'lint', 'coffee' ] );
-//gulp.task( 'scripts', [ 'coffee' ] );
+// Grouped compile and lint task
+gulp.task( "compile", [ "lint", "coffee" ] );
 
-gulp.task( 'default', [ 'scripts' ] );
-
-gulp.task( 'watch', [ 'scripts' ], function() {
+// Watch task to continuously compile and lint
+gulp.task( "watch", [ "compile" ], function() {
   gulp
-    .watch( coffeeAppRoot + '/**/*.coffee', [ 'scripts' ] );
+    .watch( coffeeAppRoot + "/**/*.coffee", [ "compile" ] );
 } );
 
-gulp.task( 'js2coffee', function() {
-  gutil.log( jsAppRoot + '/**/*.js' );
-  gulp.src( jsAppRoot + '/**/*.js' )
-    .pipe( js2coffee().on( 'error', errorHandler ) )
+// Convert JavaScript source into CoffeeScript
+gulp.task( "js2coffee", function() {
+  gutil.log( jsAppRoot + "/**/*.js" );
+  gulp.src( jsAppRoot + "/**/*.js" )
+    .pipe( js2coffee().on( "error", errorHandler ) )
     .pipe( gulp.dest( coffeeAppRoot ) )
 } );
+
+// Default task
+gulp.task( "default", [ "compile" ] );

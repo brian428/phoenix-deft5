@@ -4,6 +4,7 @@
  */
 Ext.define("Phoenix.model.ScenarioItem", {
   extend: "Phoenix.model.AbstractScenarioModel",
+  requires: [],
   fields: [
     {
       name: "id",
@@ -25,7 +26,15 @@ Ext.define("Phoenix.model.ScenarioItem", {
       type: "int"
     }, {
       name: "scenarioId",
-      type: "string"
+      reference: {
+        type: "Phoenix.model.Scenario",
+        inverse: {
+          role: "scenarioItems",
+          storeConfig: {
+            type: "scenarioItemStore"
+          }
+        }
+      }
     }
   ],
 

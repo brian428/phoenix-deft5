@@ -46,12 +46,12 @@ Ext.define( "Phoenix.model.Scenario",
 	]
 
 
-	hasMany:
-		model: "Phoenix.model.ScenarioItem"
-		name: "scenarioItems"
-		foreignKey: "scenarioId"
-		storeConfig:
-			type: "scenarioItemStore"
+#	hasMany:
+#		model: "Phoenix.model.ScenarioItem"
+#		name: "scenarioItems"
+#		foreignKey: "scenarioId"
+#		storeConfig:
+#			type: "scenarioItemStore"
 
 
 	###*

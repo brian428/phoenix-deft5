@@ -17,9 +17,10 @@ Ext.define("Phoenix.view.scenario.grid.ScenarioGrid", {
     itemdblclick: "onEditScenario",
     scope: "controller"
   },
-  title: "Scenarios &nbsp;",
+  title: "Scenario List &nbsp;",
   initComponent: function() {
     Ext.apply(this, {
+      reserveScrollbar: true,
       store: this.getScenarioStore(),
       columns: [
         {

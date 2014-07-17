@@ -32,12 +32,15 @@ Ext.define( "Phoenix.view.scenario.grid.ScenarioGrid",
 		scope: "controller"
 
 
-	title: "Scenarios &nbsp;"
+	title: "Scenario List &nbsp;"
 
 
 	initComponent: ->
 
 		Ext.apply( @,
+
+			# TODO: Remove after fix, hopefully in 5.0.1. See: http://www.sencha.com/forum/showthread.php?286672
+			reserveScrollbar: true
 
 			store: @getScenarioStore()
 

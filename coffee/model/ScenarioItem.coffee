@@ -3,6 +3,9 @@
 ###
 Ext.define( "Phoenix.model.ScenarioItem",
 	extend: "Phoenix.model.AbstractScenarioModel"
+	requires: [
+		#"Phoenix.model.Scenario"
+	]
 
 
 	fields: [
@@ -25,7 +28,13 @@ Ext.define( "Phoenix.model.ScenarioItem",
 		type: "int"
 	,
 		name: "scenarioId"
-		type: "string"
+		reference:
+			#cls: Phoenix.model.Scenario
+			type: "Phoenix.model.Scenario"
+			inverse:
+				role: "scenarioItems"
+				storeConfig:
+					type: "scenarioItemStore"
 	]
 
 

@@ -39,14 +39,6 @@ Ext.define("Phoenix.model.Scenario", {
       type: "string"
     }
   ],
-  hasMany: {
-    model: "Phoenix.model.ScenarioItem",
-    name: "scenarioItems",
-    foreignKey: "scenarioId",
-    storeConfig: {
-      type: "scenarioItemStore"
-    }
-  },
 
   /**
   	* Returns true if this {Phoenix.model.Scenario} has any invalid associated {Phoenix.model.ScenarioItem} models.
